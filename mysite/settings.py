@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST' : 'localhost' ,
-        'USER' : 'mixfin',
-        'PASSWORD' : '5CK&pKnJ8TJR',
-        'NAME': 'mixfin',
+        'HOST' : os.environ.get('DB_HOST'),
+        'USER' : os.environ.get('DB_USER'),
+        'PASSWORD' : os.environ.get('DB_PASSWORD'),
+        'NAME': os.environ.get('DB_DB'),
     }
 }
 
