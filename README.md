@@ -9,6 +9,8 @@ Forex App using DJANGO
 2. sudo pip install pymysql (for osx, use [this](http://stackoverflow.com/questions/17599830/installing-mysql-python-on-mac))
 3. sudo pip install django-grappelli ([More info on Grapelli skin](http://django-grappelli.readthedocs.org/en/latest/index.html))
 4. run 'python manage.py migrate'
+5. sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+>>>>>>> mixfinancial/master
 
 
 ## RUN
@@ -41,3 +43,6 @@ Forex App using DJANGO
 
 
 
+=======
+    python manage.py runserver
+>>>>>>> mixfinancial/master
