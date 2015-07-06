@@ -8,12 +8,13 @@ Forex App using DJANGO
 1. sudo pip install django
 2. sudo pip install pymysql (for osx, use [this](http://stackoverflow.com/questions/17599830/installing-mysql-python-on-mac))
 3. sudo pip install django-grappelli ([More info on Grapelli skin](http://django-grappelli.readthedocs.org/en/latest/index.html))
-4. run 'python manage.py migrate'
-5. sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
->>>>>>> mixfinancial/master
+4. run 'python manage.py migrate' command (Make sure to set global variables)
+5. Install SciPy: (Ubuntu) sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
 
 ## RUN
+
+This project was developed in a Linux/Unix environment. A sample run.sh.example file has been provided. This can be used to assised with running and other activities
 
     DB_DB='<Database Name>' DB_USER='<Database User>' DB_HOST='<Database Hostname>' DB_PORT=3306 DB_PASSWORD='<Database User Password>' python manage.py runserver
 
@@ -26,7 +27,7 @@ Forex App using DJANGO
 
 ## Creating a new App
 
-    DB_DB='<Database Name>' DB_USER='<Database User>' DB_HOST='<Database Hostname>' DB_PORT=3306 DB_PASSWORD='<Database User Password>' python manage.py makemigrations polls
+    DB_DB='<Database Name>' DB_USER='<Database User>' DB_HOST='<Database Hostname>' DB_PORT=3306 DB_PASSWORD='<Database User Password>' python manage.py make migrations <App Name>
 
 
 
